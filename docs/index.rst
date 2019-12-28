@@ -8,7 +8,7 @@ Python bindings to the C++ interface of http://rocksdb.org/ using cython::
     import rocksdb
     db = rocksdb.DB("test.db", rocksdb.Options(create_if_missing=True))
     db.put(b"a", b"b")
-    print db.get(b"a")
+    print(db.get(b"a"))
 
 
 Tested with python2.7 and python3.4 and RocksDB version 5.3.0
